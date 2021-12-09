@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    background-color: #AEE6F2;
+    font: normal 18px arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(131, 177, 236);
+}
+
+h1#principal {
+    color: rgb(131, 177, 236);
+    text-align: center;
+    font-size: 2.7em;
+}
+
+.subtitulo1 {
+    color: #57c04da6;
+}
+
+.subtitulo2 {
+    color: #ccd955c4;
+}
+
+.subtitulo3 {
+    color: #c04d4daf;
+}
+
+p {
+    text-align: justify;
+}
