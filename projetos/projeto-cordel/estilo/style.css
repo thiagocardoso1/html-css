@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: Passion One, cursive;
+    --fonte3: Sriracha, cursive;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -8,6 +18,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -19,6 +30,8 @@ header {
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header > p {
@@ -40,6 +53,12 @@ section {
     padding-top: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 4vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -48,13 +67,29 @@ section.normal {
 }
 
 section.imagem {
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(24, 24, 24);
+    background-attachment: fixed;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.623);
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.342);
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.295);
+    display: inline-block;
+    padding: 10px;
+}
+
+section#img01 {
+    background-image: url(../arquivos-cordel/imagens/background-01.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(../arquivos-cordel/imagens/background-02.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 
 footer {
