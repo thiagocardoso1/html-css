@@ -1,2 +1,2 @@
-os dados nao foram enviados
+os dados foram enviados !
 aprenda php para saber mais...
