@@ -1,0 +1,35 @@
+@charset "UTF8";
+
+/* Tela do site */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    background-color: darkgray;
+    text-align: center;
+    padding: 10px;
+    font-size: 2.5em;
+}
+
+li {
+    display: inline-block;
+    padding: 0px 10px;
+}    
+
+ul {
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+p {
+    padding-top: 20px;
+    width: 500px;
+    display: block;
+    margin: auto;
+    text-align: justify;
+}

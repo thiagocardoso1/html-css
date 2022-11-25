@@ -1,0 +1,32 @@
+@charset "UTF8";
+
+/* Tela de impressão */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 3.2em;
+}
+
+menu {
+    display: none;
+}
+
+p {
+    padding: 10px;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+article::after {
+    content: 'Esse artigo foi imprenso pela lenda';
+}
