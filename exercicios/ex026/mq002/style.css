@@ -1,3 +1,20 @@
 @charset "UTF-8";
 
-/* estilização geral /*
+/* estilização geral */
+
+html, css {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #233eff;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
