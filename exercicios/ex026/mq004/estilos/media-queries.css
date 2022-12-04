@@ -2,40 +2,101 @@
 
 /*restante das medias*/
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print {
+
+    main {
+        border: 1px solid black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main h1 {
+        color: black;
+        text-shadow: none;
+        font-size: 2.2em;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita pela lenda Thiago Cardoso';
+        text-decoration: overline;
+        padding: 34px;
+    }
+ 
+    img#celular {display: none;}
+    img#tablet {display: none;}
+    img#impressora {display: block;  margin: auto;}
+    img#computador {display: none;}
+    img#televisão {display: none;}
 }
 
-html {
-    height: 100vh;
-    width: 100vw;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        width: 60vw;
+    }
+
+    main h1 {
+        font-size: 2.2em;
+    }
+
+    img#celular {display: none;}
+    img#tablet {display: block; margin: auto;}
+    img#impressora {display: none;}
+    img#computador {display: none;}
+    img#televisão {display: none;}
 }
 
-body {
-    background: black url(../imagens/back-phone.jpg) no-repeat;
-    background-position: center center;
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 50vw;
+    }
+
+    main h1 {
+        font-size: 2.4em;
+    }
+
+    img#celular {display: none;}
+    img#tablet {display: none;}
+    img#impressora {display: none;}
+    img#computador {display: block; margin: auto;}
+    img#televisão {display: none;}
 }
 
-main {
-    background-color: rgba(255, 255, 255, 0.747);
-    width: 90vw;
-    margin: auto;
-    border-radius: 10px;
-    margin-top: 30px;
-}
+@media screen and (min-width: 1200px) {
 
-h1 {
-    color: white;
-    text-shadow: 2px 2px 0px rgba(19, 19, 19, 0.411);
-    text-align: center;
-    font-size: 1.8em;
-}
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
 
-img#celular {display: block; margin: auto;}
-img#tablet {display: none;}
-img#impressora {display: none;}
-img#computador {display: none;}
-img#televisão {display: none;}
+    main {
+        width: 40vw;
+    }
+
+    main h1 {
+        font-size: 2.8em;
+    }
+
+    img#celular {display: none;}
+    img#tablet {display: none;}
+    img#impressora {display: none;}
+    img#computador {display: none;}
+    img#televisão {display: block; margin: auto;}
+}
