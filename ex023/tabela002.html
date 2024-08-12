@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        caption {
+            background-color: rgb(53, 53, 53);
+            color: white;
+            padding: 10px;
+            font: normal 400 1.2em "Arial", Helvetica;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.num {
+            text-align: right;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas com html5</h1>
+    <table>
+        <caption>Top 5 estados mais burros do país</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>106.590.486</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis sunt voluptatum aliquid repudiandae ratione quod, accusantium ad numquam aperiam, possimus itaque provident a velit? Perspiciatis ipsa voluptatum distinctio cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ut tenetur corrupti tempore perspiciatis laudantium enim animi, praesentium perferendis adipisci! Cum totam temporibus amet. Neque quam illo voluptas at dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, id ipsam dolores sint cupiditate sapiente deserunt qui commodi fuga impedit inventore, adipisci repudiandae! Consectetur, neque. Assumenda quisquam tempore aliquid mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum iste cum sequi corrupti fugiat excepturi ad quo! Quam maiores, quasi nulla iure velit magnam corporis aliquam molestias tempore aperiam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis sunt voluptatum aliquid repudiandae ratione quod, accusantium ad numquam aperiam, possimus itaque provident a velit? Perspiciatis ipsa voluptatum distinctio cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ut tenetur corrupti tempore perspiciatis laudantium enim animi, praesentium perferendis adipisci! Cum totam temporibus amet. Neque quam illo voluptas at dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, id ipsam dolores sint cupiditate sapiente deserunt qui commodi fuga impedit inventore, adipisci repudiandae! Consectetur, neque. Assumenda quisquam tempore aliquid mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum iste cum sequi corrupti fugiat excepturi ad quo! Quam maiores, quasi nulla iure velit magnam corporis aliquam molestias tempore aperiam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis sunt voluptatum aliquid repudiandae ratione quod, accusantium ad numquam aperiam, possimus itaque provident a velit? Perspiciatis ipsa voluptatum distinctio cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ut tenetur corrupti tempore perspiciatis laudantium enim animi, praesentium perferendis adipisci! Cum totam temporibus amet. Neque quam illo voluptas at dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, id ipsam dolores sint cupiditate sapiente deserunt qui commodi fuga impedit inventore, adipisci repudiandae! Consectetur, neque. Assumenda quisquam tempore aliquid mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum iste cum sequi corrupti fugiat excepturi ad quo! Quam maiores, quasi nulla iure velit magnam corporis aliquam molestias tempore aperiam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis sunt voluptatum aliquid repudiandae ratione quod, accusantium ad numquam aperiam, possimus itaque provident a velit? Perspiciatis ipsa voluptatum distinctio cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ut tenetur corrupti tempore perspiciatis laudantium enim animi, praesentium perferendis adipisci! Cum totam temporibus amet. Neque quam illo voluptas at dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, id ipsam dolores sint cupiditate sapiente deserunt qui commodi fuga impedit inventore, adipisci repudiandae! Consectetur, neque. Assumenda quisquam tempore aliquid mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum iste cum sequi corrupti fugiat excepturi ad quo! Quam maiores, quasi nulla iure velit magnam corporis aliquam molestias tempore aperiam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis sunt voluptatum aliquid repudiandae ratione quod, accusantium ad numquam aperiam, possimus itaque provident a velit? Perspiciatis ipsa voluptatum distinctio cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ut tenetur corrupti tempore perspiciatis laudantium enim animi, praesentium perferendis adipisci! Cum totam temporibus amet. Neque quam illo voluptas at dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, id ipsam dolores sint cupiditate sapiente deserunt qui commodi fuga impedit inventore, adipisci repudiandae! Consectetur, neque. Assumenda quisquam tempore aliquid mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum iste cum sequi corrupti fugiat excepturi ad quo! Quam maiores, quasi nulla iure velit magnam corporis aliquam molestias tempore aperiam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis sunt voluptatum aliquid repudiandae ratione quod, accusantium ad numquam aperiam, possimus itaque provident a velit? Perspiciatis ipsa voluptatum distinctio cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ut tenetur corrupti tempore perspiciatis laudantium enim animi, praesentium perferendis adipisci! Cum totam temporibus amet. Neque quam illo voluptas at dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, id ipsam dolores sint cupiditate sapiente deserunt qui commodi fuga impedit inventore, adipisci repudiandae! Consectetur, neque. Assumenda quisquam tempore aliquid mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum iste cum sequi corrupti fugiat excepturi ad quo! Quam maiores, quasi nulla iure velit magnam corporis aliquam molestias tempore aperiam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis sunt voluptatum aliquid repudiandae ratione quod, accusantium ad numquam aperiam, possimus itaque provident a velit? Perspiciatis ipsa voluptatum distinctio cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ut tenetur corrupti tempore perspiciatis laudantium enim animi, praesentium perferendis adipisci! Cum totam temporibus amet. Neque quam illo voluptas at dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, id ipsam dolores sint cupiditate sapiente deserunt qui commodi fuga impedit inventore, adipisci repudiandae! Consectetur, neque. Assumenda quisquam tempore aliquid mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum iste cum sequi corrupti fugiat excepturi ad quo! Quam maiores, quasi nulla iure velit magnam corporis aliquam molestias tempore aperiam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis sunt voluptatum aliquid repudiandae ratione quod, accusantium ad numquam aperiam, possimus itaque provident a velit? Perspiciatis ipsa voluptatum distinctio cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ut tenetur corrupti tempore perspiciatis laudantium enim animi, praesentium perferendis adipisci! Cum totam temporibus amet. Neque quam illo voluptas at dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, id ipsam dolores sint cupiditate sapiente deserunt qui commodi fuga impedit inventore, adipisci repudiandae! Consectetur, neque. Assumenda quisquam tempore aliquid mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum iste cum sequi corrupti fugiat excepturi ad quo! Quam maiores, quasi nulla iure velit magnam corporis aliquam molestias tempore aperiam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis sunt voluptatum aliquid repudiandae ratione quod, accusantium ad numquam aperiam, possimus itaque provident a velit? Perspiciatis ipsa voluptatum distinctio cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ut tenetur corrupti tempore perspiciatis laudantium enim animi, praesentium perferendis adipisci! Cum totam temporibus amet. Neque quam illo voluptas at dolorem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, id ipsam dolores sint cupiditate sapiente deserunt qui commodi fuga impedit inventore, adipisci repudiandae! Consectetur, neque. Assumenda quisquam tempore aliquid mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum iste cum sequi corrupti fugiat excepturi ad quo! Quam maiores, quasi nulla iure velit magnam corporis aliquam molestias tempore aperiam!</p>
+</body>
+</html>

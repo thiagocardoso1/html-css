@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads de audio</title>
+</head>
+<body>
+    <h1>Reprodução de áudios no site</h1>
+    <audio preload="metadata" controls id="audio">
+        <source src="audio/Romance.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta o áudio <a href="audio/Romance.mp3" download="romance.mp3" type="audio/mpeg"></a></p>
+    </audio>
+
+    <script>
+        var audio = document.getElementById('audio');
+        audio.volume = 0.1;
+    </script>
+</body>
+</html>

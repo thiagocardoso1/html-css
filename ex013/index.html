@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos no site</title>
+</head>
+<body>
+    <h1>Hospedando vídeos no site</h1>
+    <video width="600px" poster="image/tumbnail.jpeg" controls id="videolula">
+        <source src="video/lulagigachad.mp4" type="video/mp4">
+        <p>Seu navegador não suporta o formato do arquivo...
+            <a href="video/lulagigachad.mp4">Clique aqui para baixar.</a>
+        </p>
+    </video>
+    <script>
+        var video = document.getElementById('videolula');
+        video.volume = 0.1;
+    </script>
+</body>
+</html>

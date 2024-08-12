@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 5</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        caption {
+            font-size: 1.2em;
+            background-color: lightgray;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        col#nome {
+            background-color: lightblue;
+        }
+
+        col#sexo {
+            background-color: bisque;
+        }
+
+        col#sexIdade {
+            background-color: lightpink;
+        }
+
+        col#profissão {
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando colgroup e rolagem lateral de tabela</h1>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col id="nome">
+                <col id="sexIdade" span="2">
+                <col id="profissão">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <thead>
+                <tr>
+                    <th scope="row">Nome</th>
+                    <th scope="row">Sexo</th>
+                    <th scope="row">Idade</th>
+                    <th scope="row">Profissão</th>
+                </tr>
+                <tr>
+                    <td>Ana Maria</td>
+                    <td>F</td>
+                    <td>25</td>
+                    <td>Jornalista</td>
+                </tr>
+                <tr>
+                    <td>Cláudio</td>
+                    <td>M</td>
+                    <td>28</td>
+                    <td>Programador</td>
+                </tr>
+                <tr>
+                    <td>Gustavo</td>
+                    <td>M</td>
+                    <td>42</td>
+                    <td>Professor</td>
+                </tr>
+                <tr>
+                    <td>Hélio</td>
+                    <td>M</td>
+                    <td>19</td>
+                    <td>Vendedor</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>F</td>
+                    <td>39</td>
+                    <td>Médica</td>
+                </tr>
+                <tr>
+                    <td>Otávio</td>
+                    <td>M</td>
+                    <td>22</td>
+                    <td>Nutricionista</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetando pseudo-classes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p#sla {
+            display: none;
+        }
+
+        div:hover > p#sla {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste oculto rs</h1>
+    <p></p>
+    
+    <div>
+        <p>Se tiver coragem passse o mouse aqui</p>
+        <p id="sla">Se você está lendo isso saiba que és gay...</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Formularios</title>
+</head>
+<body>
+    <h1>Soma com formulario e js</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inum1">Numero 1: </label>
+            <input type="number" name="num1" id="inum1" required
+            oninput="isoma.innerHTML = Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="inum2">Numero 2: </label>
+            <input type="number" name="num2" id="inum2" required
+            oninput="isoma.innerHTML = Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>

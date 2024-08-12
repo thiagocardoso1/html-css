@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightcyan;
+    color: black;
+}
+
+h2#señor {
+    color: red;
+}

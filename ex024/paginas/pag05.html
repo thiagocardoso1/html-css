@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina com script</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <a href="#" onclick="clicou()">Clique aqui se for homem!</a>
+    </p>
+
+    <div id="click"></div>
+    
+    <script>
+        a = window.document.getElementById("click")
+        function clicou() {
+            a.innerHTML += '<p>Você é gay!</p>'
+        }
+    </script>
+</body>
+</html>
