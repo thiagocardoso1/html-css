@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando flex-box</title>
+    <style>
+        section#container {
+            background-color: lightblue;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        div#cx1 {
+            flex: 2 2 150px;
+        }
+
+        div#cx2 {
+            flex: 1 1 150px;
+        }
+
+        div#cx3 {
+            flex: 1 1 150px;
+        }
+
+        div#cx4 {
+            flex: 1 1 150px;
+        }
+
+        div#cx5 {
+            flex: 1 1 150px;
+        }
+
+        div#cx6 {
+            flex: 1 1 150px;
+        }
+
+        div#cx7 {
+            flex: 2 2 150px;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <div class="item" id="cx1">A</div>
+        <div class="item" id="cx2">B</div>
+        <div class="item" id="cx3">C</div>
+        <div class="item" id="cx4">D</div>
+        <div class="item" id="cx5">E</div>
+        <div class="item" id="cx6">F</div>
+        <div class="item" id="cx7">G</div>
+    </section>
+</body>
+</html>
