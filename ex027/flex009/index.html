@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando flex-box</title>
+    <style>
+        section#container {
+            background-color: lightblue;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.item {
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </section>
+</body>
+</html>
