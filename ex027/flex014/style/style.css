@@ -9,17 +9,59 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    line-height: 1.5em;
+}
+
+h1, h2 {
+    padding-bottom: 20px;
+    line-height: 1.2em;
 }
 
 header {
-    text-align: center;
     padding: 20px;
 }
 
 main {
-    background-color: gray;
+    background-color: rgb(175, 175, 175);
     text-align: justify;
     padding: 20px;
+}
+
+section.flex-content {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+div.text {
+    padding: 10px;
+    flex: 1 1 500px;
+}
+
+div.media {
+    padding: 10px;
+    flex: 1 1 500px;
+}
+
+article.media-text > div.media {
+    text-align: center;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article.text-media > div.media > iframe{
+    width: 90%;
+    display: block;
+    margin: auto;
 }
 
 footer {
